@@ -24,6 +24,8 @@ const gameState = {
   poopTime: -1,
   timeToStartCelebrating: -1,
   timeToEndCelebrating: -1,
+  scene: 0,
+  state: '',
   tick(): number {
     this.clock++;
     console.log("clock", this.clock);

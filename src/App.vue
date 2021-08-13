@@ -1,14 +1,14 @@
 <template>
-  <HelloWorld msg="FOX GAME v2.0"/>
+  <Access msg="FOX GAME v2.0"/>
 </template>
 
 <script lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Access from './components/Access.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Access
   }
 }
 </script>

@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts">
-// import { init } from '../init.ts';
+import { init } from '../init.ts';
 export default {
   name: "HelloWorld",
   props: {
@@ -37,7 +37,7 @@ export default {
     };
   },
   mounted() {
-    // init();
+    init();
   },
 };
 </script>
