@@ -25,15 +25,17 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue';
+// import HelloWorld from './components/HelloWorld.vue';
 import gameState, { handleUserAction } from "./gameState";
 import { TICK_RATE } from "./constants";
 import initButtons from "./buttons";
 
-export default {
+export default defineComponent({
   name: 'App',
   data () {
     return {
-      nextTimeToTick: Date
+      nextTimeToTick: 0,
     }
   },
   created() {
@@ -55,10 +57,10 @@ export default {
         gameState.tick();
         this.nextTimeToTick = now + TICK_RATE;
       }
-      requestAnimationFrame(nextAnimationFrame);
+      requestAnimationFrame(this.nextAnimationFrame);
     }
   }
-}
+});
 </script>
 
 <style>

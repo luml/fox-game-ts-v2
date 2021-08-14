@@ -1,12 +1,12 @@
-export const modFox = function modFox(state: String) {
+export const modFox = function modFox(state: string) {
   (document.querySelector(".fox") as Element).className = `fox fox-${state}`;
 };
 
-export const modScene = function (state: String) {
+export const modScene = function (state: string) {
   (document.querySelector(".game") as Element).className = `game ${state}`;
 };
 
-export const togglePoopBag = function togglePoopBag(show: Boolean) {
+export const togglePoopBag = function togglePoopBag(show: boolean) {
   (document.querySelector(".poop-bag") as Element).classList.toggle("hidden", !show);
 };
 
