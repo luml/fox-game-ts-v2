@@ -33,7 +33,7 @@ export default {
   name: 'App',
   data () {
     return {
-      nextTimeToTick,
+      nextTimeToTick: Date
     }
   },
   created() {
@@ -46,7 +46,7 @@ export default {
     async init() {
       console.log("starting game");
       initButtons(handleUserAction);
-      requestAnimationFrame(nextAnimationFrame);
+      requestAnimationFrame(this.nextAnimationFrame);
     },
     async nextAnimationFrame() {
       const now = Date.now();
